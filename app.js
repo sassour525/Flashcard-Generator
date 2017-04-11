@@ -5,14 +5,14 @@ var FlashCard = require('./flashcard.js'); //require flashcard.js to use constru
 inquirer.prompt([
 	{
 		type: 'input',
-		message: 'What kind of flashcard would you like to make? [basic] or [cloze]',
+		message: 'What kind of flashcard would you like to view? [basic] or [cloze]',
 		name: 'input'
 	}
 ]).then(function(user){
 
 	//basic card generator
 	if (user.input == 'basic') {
-		//use constructor to create a basic card
+		//use constructor to create a basic car
 		var basicCard = new FlashCard.basic('Who was the first president of the United States?', 'George Washington');
 
 		inquirer.prompt([
