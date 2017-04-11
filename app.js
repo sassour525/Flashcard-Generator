@@ -22,7 +22,7 @@ inquirer.prompt([
 				name: 'front'
 			}
 		]).then(function(card){
-			if (card.front == 'George Washington') {
+			if (card.front == basicCard.back) {
 				console.log("You are correct!");
 			} else {
 				console.log("Sorry your answer was incorrect!");
@@ -42,7 +42,7 @@ inquirer.prompt([
 				name: 'partial'
 			}
 		]).then(function(card){
-			if (card.partial == 'George Washington') {
+			if (card.partial == clozeCard.cloze) {
 				console.log("You are correct!");
 			} else {
 				console.log("Sorry your answer was incorrect!");
